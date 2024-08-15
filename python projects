@@ -1,0 +1,21 @@
+operator = input ("please select an operation (* + - /):") 
+
+no1 = float(input("first number :"))
+no2 = float(input("second number :")) 
+
+
+if operator == "+":
+    result = no1 + no2
+    print(result)
+
+if operator == "*":
+    result = no1 * no2
+    print(result)
+
+if operator == "-":
+    result = no1 - no2
+    print(result)
+
+if operator == "/":
+    result = no1 / no2
+    print(result)
