@@ -1,0 +1,13 @@
+weight = float(input("please enter your weight: "))
+unit = input("please enter the unit: (K/L)").upper()
+
+if unit == "K" :
+    weight = weight * 2.205
+    unit= "lbs. "
+    print(f"ypur weight is{weight} {unit} ")
+elif  unit == "L":
+    weight= weight/2.205
+    unit ="kg. "   
+    print(f"your weight is {weight} {unit}")
+else :
+    print("your input in invalid! please try again.")
