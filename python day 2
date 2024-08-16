@@ -1,1 +1,32 @@
+while True :
+    operator = input("please choose the operation: (+ * - / )")
+    no1 = float(input(" please enter the first number: "))
+    no2 = float(input(" please enter the second number: "))
 
+    if operator == "+" :
+        result = no1 + no2
+        print (result)
+    elif operator == "*" :
+        result = no1 * no2
+        print (result)
+    elif operator == "-":
+        result = no1 - no2 
+        print (result)
+    elif operator == "/":
+        if no2 != 0 :
+            result = no1/ no2
+            print (result)
+        else:
+            print("Error: Division by zero is not allowed.")
+        
+    
+    else:
+        print(f"{operator} is not valid.")
+
+    answer = input(" Do you want to continue? (yes/no): ").lower()
+
+
+    if answer == "no":
+        print(" thanks for your time.")
+        break    
+         
